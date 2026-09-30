@@ -1,0 +1,12 @@
+version: 0.0
+os: linux
+
+files:
+  - source: /
+    destination: /var/www/html/
+
+hooks:
+  AfterInstall:
+    - location: hooks/after_install
+      timeout: 300
+      runas: root

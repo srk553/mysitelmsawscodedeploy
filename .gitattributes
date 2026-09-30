@@ -1,0 +1,6 @@
+# Deploy scripts must stay LF so the Linux shebang works.
+appspec.yml text eol=lf
+hooks/after_install text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.js text eol=lf
