@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini LMS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="#/" data-link>
+        <span class="brand-mark">LMS</span>
+        <span>Mini LMS</span>
+      </a>
+      <nav class="nav">
+        <a href="#/" data-link data-nav="courses">Courses</a>
+        <a href="#/progress" data-link data-nav="progress">My Progress</a>
+      </nav>
+      <div class="topbar-right">
+        <input id="search" class="search" type="search" placeholder="Search courses..." aria-label="Search courses">
+        <select id="level-filter" class="filter" aria-label="Filter by level">
+          <option value="all">All levels</option>
+          <option value="beginner">Beginner</option>
+          <option value="intermediate">Intermediate</option>
+          <option value="advanced">Advanced</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <main id="app" class="wrap" tabindex="-1"></main>
+
+  <footer class="footer wrap">
+    <span>Mini LMS &middot; HTML, CSS and vanilla JS</span>
+    <button id="reset-progress" class="link-btn" type="button">Reset progress</button>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
